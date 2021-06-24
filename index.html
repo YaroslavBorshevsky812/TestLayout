@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   <section class="main">
+       <div class="main_inner">
+           <div class="frameFirst">
+               <h4 class="frameFirst_title">
+                   В случае несогласия с результатами экзамена Кандидат имеет право на подачу апелляции:
+                </h4>
+                <ul class="frameFirst_content">
+                    <li class="frameFirst_content-item">
+                        сроки подачи: не позднее 6 недель с даты письменного экзамена.
+                    </li>
+                    <li class="frameFirst_content-item">
+                        сроки рассмотрения: от 2 дней до 3 недель с даты получения запроса.
+                    </li>
+                    <li class="frameFirst_content-item">
+                        стоимость: 9500 рублей* +100 рублей комиссия за онлайн перевод
+                    </li>
+                </ul>
+           </div>
+
+           <div class="frameSecond">
+                <div class="frameSecond_item frameSecond_item--first">
+                    <div class="title">
+                        <h3 class="frameSecond_item-title">скачайте и заполните</h3>
+                        <h4 class="frameSecond_item-subtitle frameSecond_item-subtitle--first">два файла с заявлением на апелляцию</h4>
+                    </div>
+                    
+                    <div class="frameSecond_item-content">
+                        <div class="file">
+                            <div class="file-icon">
+                                <img src="./images/Downloads/fileCircl.png" alt="">
+                            </div>
+                            <div class="file-info">
+                                <img class="file-info-item" src="./images/Downloads/pdf.png" alt="">
+                                <img class="file-info-item file-info-item--num" src="./images/Downloads/NumOne.png" alt="">
+                            </div>
+                            <a class="file-link" href="#">скачать</a>
+                        </div>
+
+                        <div class="file">
+                            <div class="file-icon">
+                                <img src="./images/Downloads/fileCircl.png" alt="">
+                            </div>
+                            <div class="file-info">
+                                <img class="file-info-item" src="./images/Downloads/pdf.png" alt="">
+                                <img class="file-info-item file-info-item--num" src="./images/Downloads/Two.png" alt="">
+                            </div>
+                            <a class="file-link" href="#">скачать</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="frameSecond_item frameSecond_item--second">
+                    <div class="title title--third">
+                        <h3 class="frameSecond_item-title">отсканируйте и загрузите</h3>
+                        <h4 class="frameSecond_item-subtitle frameSecond_item-subtitle--third">заполненные заявления</h4>
+                    </div>
+                    <div class="frameSecond_item-content">
+
+                        <div class="file file--download">
+                            <!-- Две иконки поверх друг друга -->
+                                <div class="file-icon file-icon--download"  id="oneChange">
+                                    <img class="file-icon-pencil" src="./images/Downloads/pencil.png" alt="">
+                                    <img class="file-icon-sum" src="./images/Downloads/sum.png" alt="">
+                                </div>
+                            <!-- \\\ Две иконки поверх друг друга -->
+                            <div class="file-num">
+                                <img src="./images/Downloads/NumOne.png" alt="">
+                                <img class="ok" id="OneUpload" src="./images/Downloads/ok.png" alt="">
+                            </div>
+                            <a class="file-link file-link--download" data-upload="OneUpload" data-changePic="oneChange" href="#">загрузить</a>
+                        </div>
+
+                        <div class="file file--download">
+                            <!-- Две иконки поверх друг друга -->
+                            <div class="file-icon file-icon--download"  id="TwoChange">
+                                <img class="file-icon-pencil" src="./images/Downloads/pencil.png" alt="">
+                                <img class="file-icon-sum" src="./images/Downloads/sum.png" alt="">
+                            </div>
+                            <!-- \\\ Две иконки поверх друг друга -->
+                            <div class="file-num" id="twoChange">
+                                <img src="./images/Downloads/Two.png" alt="">
+                                <img class="ok" id="twoUpload" src="./images/Downloads/ok.png" alt="">
+                            </div>
+                            <a class="file-link file-link--download" data-upload="twoUpload" data-changePic="TwoChange" href="#">загрузить</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="frameSecond_item frameSecond_item--third">
+                    <h3 class="frameSecond_item-title">олатите</h3>
+                    <h4 class="frameSecond_item-subtitle frameSecond_item-subtitle--third">подачу апелляции</h4>
+                    <h5 class="frameSecond_item-price">Стоимость апелляции - 7700 ₽</h5>
+                    <div class="btn">
+                        <a class="btn-link" href="#">Оплата апелляции</a>
+                    </div>
+                </div>
+           </div>
+
+           <div class="frameThird">
+                <ul class="frameThird-content">
+                    <li>Важная информация для корректного заполнения заявления:</li>
+                    <li>Centre name: BKC-ih Moscow IELTS Test Centre</li>
+                    <li>Centre number: RU087</li>
+                    <li>Candidate number:  Цифры в верхнем правом углу сертификата/можно не заполнять, если сертификат еще не получен.</li>
+                </ul>
+           </div>
+       </div>
+   </section>
+
+
+   <script src="/app.js"></script>
+</body>
+</html>

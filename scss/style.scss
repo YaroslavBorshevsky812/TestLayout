@@ -1,0 +1,343 @@
+@import 'normalize.css';
+
+.h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+// Variables
+
+$fw-regular: 400;
+$fw-light: 300;
+$fw-bold: 700;
+
+// \\ Variables
+
+
+.main_inner {
+    max-width: 1440px;
+    padding: 50px 30px 50px 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+// First Frame
+
+.frameFirst {
+    font-size: 18px;
+    margin-bottom: 25px;
+
+        &_title {
+            font-weight: $fw-light;
+            line-height: 42px;
+        }
+        &_content {
+            margin: 0;
+            &-item {
+                line-height: 23px;
+                list-style: none;
+                position: relative;
+                margin-bottom: 8px;
+                &:before {
+                    background-color: red; 
+                    border-radius: 100%;
+                    content: ""; 
+                    height: 8px;
+                    width: 8px;
+                    top: 8px;
+                    left: -16px;
+                    position: absolute;
+                }
+            }
+        }
+}
+
+// First Frame /////
+
+// Second Frame
+
+.frameSecond {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+    margin-right: 40px;
+        &_item {
+            width: 33.333%;
+            text-align: center;
+            &--first {
+                max-width: 230px;
+            }
+            &--second {
+                max-width: 275px;
+            }
+            &--third {
+                max-width: 275px;
+                // margin-right: 40px;
+            }
+            &-title {
+                font-size: 18px;
+                font-weight: $fw-light;
+                text-transform: uppercase;
+            }
+            &-subtitle {
+                font-size: 18px;
+                font-weight: $fw-light;
+                &--third {
+                    margin-bottom: 27px;
+                }
+            }
+        }
+}
+
+.title {
+    height: 82px;
+    margin-bottom: 23px;
+        &--third {
+            max-height: 98px;
+        }
+}
+
+.frameSecond_item-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px; 
+    max-height: 97px;
+    max-width: 197px;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+.frameSecond_item-price {
+    font-size: 12px;
+    color: #ec1630;
+    font-weight: $fw-light;
+    margin-bottom: 48px;
+}
+
+.btn {
+    background-color: #ec1630;
+    padding: 7px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+        &:hover {
+            background-color: #f73f54;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        &-link {
+            font-size: 14px;
+            font-weight: $fw-bold;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+        }
+}
+
+
+.file {
+    width: 67px;
+    height: 87px;
+    border: 5px solid #c4c4c4;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+        &-info {
+            padding-top: 4px;
+            padding-left: 4px;
+            padding-bottom: 13px;
+            display: block;
+                &-item {
+                    display: block;
+                }
+                &-item:last-child {
+                    margin-top: 5px;
+                }
+        }
+        
+        &-link {
+            margin-top: auto;
+            font-size: 12px;
+            color: #ec1630;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-icon {
+            width: 34px;
+            height: 34px;
+            border: 3px solid #c4c4c4;
+            border-radius: 100%;
+            position: absolute;
+            top: -22px;
+            left: 40px;
+            background-color: #ed1631;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+.file-icon-pencil {
+    display: none;
+}
+
+.file-icon--download.done .file-icon-sum{
+    display: none;
+}
+
+.file-icon--download.done .file-icon-pencil{
+    display: block;
+}
+
+.file-info--download {
+    text-align: center;
+}
+
+.file--download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-link--download {
+    margin-top: 5px;
+}
+
+.file-num {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ok {
+    margin: 0px 5px;
+    display: none;
+    opacity: 0; 
+    &.done {
+        transition: opacity .5s ease-in-out;
+        display: flex;
+    }
+}
+
+// Second Frame /////
+
+// Third Frame
+
+.frameThird {
+    max-width: 100%;
+    border: 1px solid #ec1630;
+    background-color: #eeeeee;
+    padding: 15px;
+        &-content {
+            font-size: 12px;
+            font-weight: $fw-light;
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+}
+
+// Third Frame /////////
+
+
+
+// Media ///////////////////////////////////////////////
+
+
+// ===== 990 ====== //////////
+
+@media (max-width: 990px) {
+    .frameFirst {
+        margin-bottom: 50px;
+    }
+
+    .frameSecond {
+        margin-bottom: 80px;
+    }
+}
+
+// ===== 990  ===== //////////
+
+// ===== 770 ====== //////////
+
+@media (max-width: 770px) {
+    .frameFirst {
+        font-size: 15px;
+        &_title {
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .frameSecond {
+        flex-wrap: wrap;
+        .frameSecond_item {
+            width: 100%;
+        }
+    }
+
+    .frameSecond_item--third {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+// ===== 770  ===== //////////
+
+// ===== 575 ====== //////////
+
+@media (max-width: 575px) {
+    .frameFirst {
+        font-size: 12px;
+        &_title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .frameSecond_item {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+// ===== 575  ===== //////////
+
+// ===== 320 ====== //////////
+
+@media (max-width: 320px) {
+
+    .main_inner {
+        padding: 25px 25px 25px 25px;
+    }
+
+    .frameFirst {
+        margin-bottom: 65px;
+    }
+
+    .frameFirst_content {
+        padding-left: 20px;
+    }
+
+    .frameSecond {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        margin-bottom: 50px;
+    }
+}
+
+// ===== 320  ===== //////////
+
+
+
