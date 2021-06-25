@@ -104,7 +104,7 @@ $fw-bold: 700;
     display: flex;
     justify-content: space-between;
     padding: 0 10px; 
-    max-height: 97px;
+    max-height: 155px;
     max-width: 197px;
     margin: 0 auto;
     align-items: flex-end;
@@ -158,6 +158,10 @@ $fw-bold: 700;
         }
         
         &-link {
+            background-color: #fff;
+            border: none; 
+            outline: none;
+            cursor: pointer;
             margin-top: auto;
             font-size: 12px;
             color: #ec1630;
@@ -244,6 +248,52 @@ $fw-bold: 700;
 
 // Third Frame /////////
 
+// Download File
+
+.fileWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameInput {
+    margin-top: 20px;
+}
+
+.uploadFile-input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px;
+}
+
+.uploadFile-label {
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 10px;
+    border: 2px dashed #c4c4c4;
+    padding: 3px 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+        &:hover {
+            border: 2px dashed #ed1631;
+        }
+        &:hover .uploadFile-text {
+            color: #ed1631;
+        }
+}
+
+.uploadFile-text {
+    transition: .4s;
+    font-size: 12px;
+    color: #777373;
+}
 
 
 // Media ///////////////////////////////////////////////
@@ -288,6 +338,24 @@ $fw-bold: 700;
 }
 
 // ===== 770  ===== //////////
+
+
+
+// ======== 625 ========= 
+
+@media (max-width: 770px) {
+    .frameSecond_item {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+// ======== 625 ========= //////////////
+
 
 // ===== 575 ====== //////////
 

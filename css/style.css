@@ -69,7 +69,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  max-height: 97px;
+  max-height: 155px;
   max-width: 197px;
   margin: 0 auto;
   align-items: flex-end; }
@@ -113,6 +113,10 @@ h5 {
     .file-info-item:last-child {
       margin-top: 5px; }
   .file-link {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
     margin-top: auto;
     font-size: 12px;
     color: #ec1630;
@@ -177,6 +181,44 @@ h5 {
     padding-left: 0;
     list-style: none; }
 
+.fileWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.frameInput {
+  margin-top: 20px; }
+
+.uploadFile-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 0.4px;
+  height: 0.4px; }
+
+.uploadFile-label {
+  height: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 10px;
+  border: 2px dashed #c4c4c4;
+  padding: 3px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .4s; }
+  .uploadFile-label:hover {
+    border: 2px dashed #ed1631; }
+  .uploadFile-label:hover .uploadFile-text {
+    color: #ed1631; }
+
+.uploadFile-text {
+  transition: .4s;
+  font-size: 12px;
+  color: #777373; }
+
 @media (max-width: 990px) {
   .frameFirst {
     margin-bottom: 50px; }
@@ -196,6 +238,14 @@ h5 {
   .frameSecond_item--third {
     margin: 0 auto;
     margin-top: 50px; } }
+
+@media (max-width: 770px) {
+  .frameSecond_item {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+    .frameSecond_item:last-child {
+      margin-bottom: 0px; } }
 
 @media (max-width: 575px) {
   .frameFirst {
