@@ -37,9 +37,9 @@ inputFileOne.forEach(function(el) {
                 fileList.push(el.files[i]);
             } 
 
-            fileList.forEach( file => {
-                textSelector.textContent = file.name
-            })
+            // fileList.forEach( file => {
+            //     textSelector.textContent = file.name
+            // })
     })
 })
 
@@ -54,9 +54,9 @@ inputFileTwo.forEach(function(el) {
                 fileList.push(el.files[i]);
             } 
 
-            fileList.forEach( file => {
-                textSelector.textContent = file.name
-            })
+            // fileList.forEach( file => {
+            //     textSelector.textContent = file.name
+            // })
     })
 })
 

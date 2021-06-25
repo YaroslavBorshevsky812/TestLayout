@@ -223,7 +223,7 @@ $fw-bold: 700;
     display: none;
     opacity: 0; 
     &.done {
-        transition: opacity .5s ease-in-out;
+        transition: opacity 1s ease-in-out;
         display: flex;
     }
 }
@@ -270,23 +270,14 @@ $fw-bold: 700;
 }
 
 .uploadFile-label {
-    height: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 10px;
-    border: 2px dashed #c4c4c4;
-    padding: 3px 40px;
-    border-radius: 6px;
     cursor: pointer;
     transition: .4s;
-        &:hover {
-            border: 2px dashed #ed1631;
-        }
-        &:hover .uploadFile-text {
-            color: #ed1631;
-        }
+        // &:hover {
+        //     border: 2px dashed #ed1631;
+        // }
+        // &:hover .uploadFile-text {
+        //     color: #ed1631;
+        // }
 }
 
 .uploadFile-text {
